@@ -37,6 +37,6 @@ function battery_segment {
     content="$content$cap%"
 
     PS1+="$(segment_end "$fg_color" "$bg_color")"
-    PS1+="$(segment_content "$fg_color" "$bg_color" " $content ")"
+    PS1+="$(segment_content "$fg_color" "$bg_color" "$content")"
     __last_color="$bg_color"
 }
